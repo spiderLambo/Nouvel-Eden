@@ -16,7 +16,9 @@ shape = SubResource( 1 )
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="Camera" type="Camera" parent="."]
+[node name="CameraPivot" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="CameraPivot"]
 transform = Transform( 1, 0, 0, 0, 0.808763, 0.588135, 0, -0.588135, 0.808763, 0.102081, 1.4379, 2.53403 )
 current = true
 
